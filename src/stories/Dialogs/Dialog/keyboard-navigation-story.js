@@ -1,7 +1,5 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs } from '@storybook/addon-knobs';
-import { checkA11y } from '@storybook/addon-a11y';
 import { Dialog, DialogActionsBar } from '@progress/kendo-react-dialogs';
 
 class App extends React.Component {
@@ -60,10 +58,8 @@ class App extends React.Component {
   }
 }
 
-const stories = storiesOf('Dialog', module);
-stories.addDecorator(withKnobs);
-stories.addDecorator(checkA11y);
+const stories = storiesOf('Dialogs/Dialog', module);
 
-stories.add('Dialog - Keyboard Navigation', () =>
+stories.add('Keyboard Navigation', () =>
   <App />
 );

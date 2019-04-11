@@ -1,15 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { boolean, number, text, withKnobs } from '@storybook/addon-knobs';
-import { checkA11y } from '@storybook/addon-a11y';
+import { boolean, number, text } from '@storybook/addon-knobs';
 import { Switch } from '@progress/kendo-react-inputs';
 
-const stories = storiesOf('Inputs', module);
-stories.addDecorator(withKnobs);
-stories.addDecorator(checkA11y);
-
-stories.add('Switch', () =>
+storiesOf('Inputs/Switch', module).add('Overview', () =>
   <Switch
     checked={boolean('checked')}
     disabled={boolean('disabled', false)}

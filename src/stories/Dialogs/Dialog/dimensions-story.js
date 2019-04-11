@@ -1,7 +1,5 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs } from '@storybook/addon-knobs';
-import { checkA11y } from '@storybook/addon-a11y';
 import { Dialog, DialogActionsBar } from '@progress/kendo-react-dialogs';
 
 class App extends React.Component {
@@ -23,11 +21,10 @@ class App extends React.Component {
     return (
       <div>
         <button className="k-button" onClick={this.toggleDialog}>Open Dialog</button>
-        {this.state.visible && <Dialog title={"Please confirm"} onClose={this.toggleDialog}>
-          <p style={{ margin: "25px", textAlign: "center" }}>Are you sure you want to continue?</p>
+        {this.state.visible && <Dialog title={"Status"}onClose={this.toggleDialog} width={200} height={250}>
+          <p style={{ margin: "25px", textAlign: "center" }}>Your escape pod is now ready.</p>
           <DialogActionsBar>
-            <button className="k-button" onClick={this.toggleDialog}>No</button>
-            <button className="k-button" onClick={this.toggleDialog}>Yes</button>
+            <button className="k-button k-primary" onClick={this.toggleDialog}>Launch</button>
           </DialogActionsBar>
         </Dialog>}
       </div>
@@ -35,10 +32,8 @@ class App extends React.Component {
   }
 }
 
-const stories = storiesOf('Dialog', module);
-stories.addDecorator(withKnobs);
-stories.addDecorator(checkA11y);
+const stories = storiesOf('Dialogs/Dialog', module);
 
-stories.add('Dialog - Visibility', () =>
+stories.add('Dimensions', () =>
   <App />
 );

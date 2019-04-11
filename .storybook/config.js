@@ -1,5 +1,5 @@
 import React from 'react';
-import { configure, setAddon, addDecorator } from '@storybook/react';
+import { addDecorator, configure, setAddon } from '@storybook/react';
 import infoAddon, { setDefaults } from '@storybook/addon-info';
 import { setOptions } from '@storybook/addon-options';
 import centered from '@storybook/addon-centered';

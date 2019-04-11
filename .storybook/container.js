@@ -7,9 +7,7 @@ export default class Container extends Component {
 
     return (
       <React.StrictMode>
-        <div
-          data-floating-menu-container
-          role="main">
+        <div role="main">
           {story()}
         </div>
       </React.StrictMode>

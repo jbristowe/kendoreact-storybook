@@ -1,14 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { boolean, withKnobs } from '@storybook/addon-knobs';
-import { checkA11y } from '@storybook/addon-a11y';
+import { boolean } from '@storybook/addon-knobs';
 import { DatePicker } from '@progress/kendo-react-dateinputs';
 
-const stories = storiesOf('DateInputs', module);
-stories.addDecorator(withKnobs);
-stories.addDecorator(checkA11y);
-
-stories.add('DatePicker', () =>
+storiesOf('DateInputs/DatePicker', module).add('Overview', () =>
   <DatePicker
     disabled={boolean('Disabled', false)}
   />

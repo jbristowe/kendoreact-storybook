@@ -1,14 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { boolean, text, withKnobs } from '@storybook/addon-knobs';
-import { checkA11y } from '@storybook/addon-a11y';
+import { boolean } from '@storybook/addon-knobs';
 import { DropDownList } from '@progress/kendo-react-dropdowns';
 
-const stories = storiesOf('DropDowns', module);
-stories.addDecorator(withKnobs);
-stories.addDecorator(checkA11y);
-
-stories.add('DropDownList', () =>
+storiesOf('DropDowns/DropDownList', module).add('Overview', () =>
   <DropDownList
     disabled={boolean('Disabled', false)}
   />

@@ -1,8 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { boolean, number, withKnobs } from '@storybook/addon-knobs';
-import { checkA11y } from '@storybook/addon-a11y';
+import { boolean, number } from '@storybook/addon-knobs';
 import { Grid, GridColumn, GridCell } from '@progress/kendo-react-grid';
 import products from './products.json';
 
@@ -16,11 +15,7 @@ class CustomCell extends GridCell {
   }
 }
 
-const stories = storiesOf('Grid', module);
-stories.addDecorator(withKnobs);
-stories.addDecorator(checkA11y);
-
-stories.add('Overview', () =>
+storiesOf('Grid', module).add('Overview', () =>
   <Grid
     data={products}
     filterable={boolean('Filterable', false)}
