@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/kendoreact-storybook/precache-manifest.40d2f3a6aa043bffcfff9b216d4faebb.js"
+  "precache-manifest.53878eae2a031644b43f4da9068ac8ab.js"
 );
 
 workbox.clientsClaim();

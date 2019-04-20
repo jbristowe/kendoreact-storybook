@@ -1,14 +1,13 @@
 {
-  "main.css": "/kendoreact-storybook/static/css/main.f459e50d.chunk.css",
-  "main.js": "/kendoreact-storybook/static/js/main.64f679f4.chunk.js",
-  "main.js.map": "/kendoreact-storybook/static/js/main.64f679f4.chunk.js.map",
-  "runtime~main.js": "/kendoreact-storybook/static/js/runtime~main.2f7e7294.js",
-  "runtime~main.js.map": "/kendoreact-storybook/static/js/runtime~main.2f7e7294.js.map",
-  "static/js/2.6efc73d3.chunk.js": "/kendoreact-storybook/static/js/2.6efc73d3.chunk.js",
-  "static/js/2.6efc73d3.chunk.js.map": "/kendoreact-storybook/static/js/2.6efc73d3.chunk.js.map",
-  "index.html": "/kendoreact-storybook/index.html",
-  "precache-manifest.40d2f3a6aa043bffcfff9b216d4faebb.js": "/kendoreact-storybook/precache-manifest.40d2f3a6aa043bffcfff9b216d4faebb.js",
-  "service-worker.js": "/kendoreact-storybook/service-worker.js",
-  "static/css/main.f459e50d.chunk.css.map": "/kendoreact-storybook/static/css/main.f459e50d.chunk.css.map",
-  "static/media/logo.svg": "/kendoreact-storybook/static/media/logo.5d5d9eef.svg"
+  "main.css": "/kendoreact-storybook/main.css",
+  "main.js": "/kendoreact-storybook/main.9c30daeec5ec71cea151.bundle.js",
+  "main.css.map": "/kendoreact-storybook/main.css.map",
+  "main.js.map": "/kendoreact-storybook/main.9c30daeec5ec71cea151.bundle.js.map",
+  "runtime~main.js": "/kendoreact-storybook/runtime~main.9c30daeec5ec71cea151.bundle.js",
+  "runtime~main.js.map": "/kendoreact-storybook/runtime~main.9c30daeec5ec71cea151.bundle.js.map",
+  "vendors~main.js": "/kendoreact-storybook/vendors~main.9c30daeec5ec71cea151.bundle.js",
+  "vendors~main.js.map": "/kendoreact-storybook/vendors~main.9c30daeec5ec71cea151.bundle.js.map",
+  "iframe.html": "/kendoreact-storybook/iframe.html",
+  "precache-manifest.53878eae2a031644b43f4da9068ac8ab.js": "/kendoreact-storybook/precache-manifest.53878eae2a031644b43f4da9068ac8ab.js",
+  "service-worker.js": "/kendoreact-storybook/service-worker.js"
 }
