@@ -1,14 +1,14 @@
 {
-  "main.css": "/static/css/main.f459e50d.chunk.css",
-  "main.js": "/static/js/main.7f175000.chunk.js",
-  "main.js.map": "/static/js/main.7f175000.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-  "static/js/2.6efc73d3.chunk.js": "/static/js/2.6efc73d3.chunk.js",
-  "static/js/2.6efc73d3.chunk.js.map": "/static/js/2.6efc73d3.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.015611f54fd61b4adfd0314c3f1d5b14.js": "/precache-manifest.015611f54fd61b4adfd0314c3f1d5b14.js",
-  "service-worker.js": "/service-worker.js",
-  "static/css/main.f459e50d.chunk.css.map": "/static/css/main.f459e50d.chunk.css.map",
-  "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
+  "main.css": "/kendoreact-storybook/static/css/main.f459e50d.chunk.css",
+  "main.js": "/kendoreact-storybook/static/js/main.64f679f4.chunk.js",
+  "main.js.map": "/kendoreact-storybook/static/js/main.64f679f4.chunk.js.map",
+  "runtime~main.js": "/kendoreact-storybook/static/js/runtime~main.2f7e7294.js",
+  "runtime~main.js.map": "/kendoreact-storybook/static/js/runtime~main.2f7e7294.js.map",
+  "static/js/2.6efc73d3.chunk.js": "/kendoreact-storybook/static/js/2.6efc73d3.chunk.js",
+  "static/js/2.6efc73d3.chunk.js.map": "/kendoreact-storybook/static/js/2.6efc73d3.chunk.js.map",
+  "index.html": "/kendoreact-storybook/index.html",
+  "precache-manifest.40d2f3a6aa043bffcfff9b216d4faebb.js": "/kendoreact-storybook/precache-manifest.40d2f3a6aa043bffcfff9b216d4faebb.js",
+  "service-worker.js": "/kendoreact-storybook/service-worker.js",
+  "static/css/main.f459e50d.chunk.css.map": "/kendoreact-storybook/static/css/main.f459e50d.chunk.css.map",
+  "static/media/logo.svg": "/kendoreact-storybook/static/media/logo.5d5d9eef.svg"
 }
