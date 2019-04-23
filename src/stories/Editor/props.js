@@ -1,29 +1,20 @@
 import { action } from '@storybook/addon-actions';
-import { boolean, select, text, object } from '@storybook/addon-knobs';
+import { text } from '@storybook/addon-knobs';
+import content from './content';
+
+// const { Bold, Italic, Underline,
+//   AlignLeft, AlignRight, AlignCenter,
+//   Indent, Outdent,
+//   OrderedList, UnorderedList,
+//   Undo, Redo, Link, Unlink } = EditorTools;
 
 export const props = () => ({
   // appearance knobs
-  primary: boolean('primary', false, 'Appearance'),
-  look: select('look', [ 'default', 'bare', 'flat', 'outline' ], 'default', 'Appearance'),
-  icon: text('icon', '', 'Appearance'),
-  iconClass: text('iconClass', '', 'Appearance'),
-  imageAlt: text('imageAlt', '', 'Appearance'),
-  imageUrl: text('imageUrl', '', 'Appearance'),
-  selected: boolean('selected', false, 'Appearance'),
-  title: text('title', '', 'Appearance'),
+  defaultContent: text('defaultContent', content, 'Appearance'),
 
   // behavior knobs
-  disabled: boolean('disabled', false, 'Behavior'),
-  togglable: boolean('togglable', false, 'Behavior'),
-  value: text('value', '', 'Behavior'),
 
   // event actions
-  onAbort: action('abort'),
-  onAbortCapture: action('abortCapture'),
-  onAnimationEnd: action('animationEnd'),
-  onAnimationEndCapture: action('animationEndCapture'),
-  onAnimationIteration: action('animationIteration'),
-  onClick: action('click'),
 
   // appearance
   style: {width:800}

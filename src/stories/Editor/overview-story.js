@@ -2,7 +2,6 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Editor, EditorTools } from '@progress/kendo-react-editor';
 import { props } from './props';
-import content from './content';
 
 const { Bold, Italic, Underline,
   AlignLeft, AlignRight, AlignCenter,
@@ -20,6 +19,9 @@ storiesOf('Editor', module).add('Overview', () =>
         [ AlignLeft, AlignCenter, AlignRight ],
         [ OrderedList, UnorderedList, Indent, Outdent ]
     ]}
-    defaultContent={content}
-  />
+  />, {
+    knobs: {
+      escapeHTML: false
+    }
+  }
 );

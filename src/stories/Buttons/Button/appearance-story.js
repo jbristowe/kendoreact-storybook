@@ -4,5 +4,5 @@ import { Button } from '@progress/kendo-react-buttons';
 import { props } from './props';
 
 storiesOf('Buttons/Button', module).add('Appearance', () =>
-  <Button>This is the text...</Button>
+  <Button {...props()}>This is the text...</Button>
 );

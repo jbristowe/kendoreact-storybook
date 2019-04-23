@@ -6,7 +6,6 @@ import { props } from './props';
 
 storiesOf('Charts/Chart', module).add('Empty', () => {
   return (
-    <Chart {...props()}>
-    </Chart>
+    <Chart {...props()} />
   )
 });

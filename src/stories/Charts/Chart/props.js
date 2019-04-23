@@ -4,7 +4,7 @@ import { boolean, select } from '@storybook/addon-knobs';
 export const props = () => ({
   // behavior knobs
   disabled: boolean('disabled', false, 'Behavior'),
-  renderAs: select('renderAs', [ 'svg', 'canvas' ], 'canvas', 'Behavior'),
+  renderAs: select('renderAs', [ 'svg', 'canvas' ], 'svg', 'Behavior'),
 
   // event actions
   onAxisLabelClick: action('axisLabelClick'),

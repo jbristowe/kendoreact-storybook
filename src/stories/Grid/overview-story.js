@@ -1,8 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { boolean, number } from '@storybook/addon-knobs';
 import { Grid, GridColumn, GridCell } from '@progress/kendo-react-grid';
+import { props } from './props';
 import products from './products.json';
 
 class CustomCell extends GridCell {
@@ -16,25 +15,7 @@ class CustomCell extends GridCell {
 }
 
 storiesOf('Grid', module).add('Overview', () =>
-  <Grid
-    data={products}
-    filterable={boolean('Filterable', false)}
-    groupable={boolean('Groupable', false)}
-    onColumnReorder={action('columnReordered')} 
-    onColumnResize={action('columnResized')}
-    onDataStateChange={action('dataStateChanged')}
-    onExpandChange={action('expandChanged')}
-    onFilterChange={action('filterChanged')}
-    onSortChange={action('sortChanged')}
-    pageable={boolean('Pageable', false)}
-    pageSize={number('Page Size')}
-    reorderable={boolean('Reorderable', false)}
-    resizable={boolean('Resizable', false)}
-    skip={number('Skip')}
-    sortable={boolean('Sortable')}
-    take={number('Take')}
-    total={number('Total')}
-    >
+  <Grid data={products} {...props()}>
       <GridColumn field="ProductID" title="ID" />
       <GridColumn field="ProductName" title="Name" />
       <GridColumn field="Category.CategoryName" title="Category" />
