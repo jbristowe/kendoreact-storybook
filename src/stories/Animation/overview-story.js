@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Animation, Expand, Fade, Push, Slide, Zoom, Reveal } from '@progress/kendo-react-animation'
+import { Expand, Fade, Push, Slide, Zoom, Reveal } from '@progress/kendo-react-animation'
 
 class App extends React.Component {
   constructor(props) {

@@ -33,5 +33,6 @@ export const props = () => ({
   onContextMenu: action('contextMenu'),
   onContextMenuCapture: action('contextMenuCapture'),
   onCopy: action('copy'),
-  onCopyCapture: action('copyCapture')
+  onCopyCapture: action('copyCapture'),
+  onFocus: action('focus')
 });

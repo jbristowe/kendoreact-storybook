@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { array, select, text } from '@storybook/addon-knobs';
 import { Chart, ChartSeries, ChartSeriesItem, ChartCategoryAxis, ChartCategoryAxisItem, ChartTitle } from '@progress/kendo-react-charts';

@@ -3,10 +3,6 @@ import { storiesOf } from '@storybook/react';
 import { Dialog, DialogActionsBar } from '@progress/kendo-react-dialogs';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div dir="rtl" >

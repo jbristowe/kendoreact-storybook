@@ -1,7 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Button, ButtonGroup } from '@progress/kendo-react-buttons';
-import { props } from './props';
 
 storiesOf('Buttons/ButtonGroup', module).add('Overview', () =>
 <div className="row">
