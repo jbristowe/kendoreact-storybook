@@ -12,3 +12,5 @@ export const props = () => ({
   // appearance
   style: {width:800}
 });
+
+export default props;

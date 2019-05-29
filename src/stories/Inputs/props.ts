@@ -1,7 +1,7 @@
 import { action } from '@storybook/addon-actions';
 import { boolean } from '@storybook/addon-knobs';
 
-export const props = () => ({
+const props = () => ({
   // behavior knobs
   disabled: boolean('disabled', false, 'Behavior'),
 
@@ -36,3 +36,5 @@ export const props = () => ({
   onCopyCapture: action('copyCapture'),
   onFocus: action('focus')
 });
+
+export default props;

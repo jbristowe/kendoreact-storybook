@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Grid, GridColumn, GridCell } from '@progress/kendo-react-grid';
-import { props } from './props';
+import props from './props';
 import products from './products.json';
 
 class CustomCell extends GridCell {
@@ -15,7 +15,7 @@ class CustomCell extends GridCell {
 }
 
 storiesOf('Grid', module).add('Overview', () =>
-  <Grid data={products} {...props()}>
+  <Grid data={products}{...props()}>
       <GridColumn field="ProductID" title="ID" />
       <GridColumn field="ProductName" title="Name" />
       <GridColumn field="Category.CategoryName" title="Category" />

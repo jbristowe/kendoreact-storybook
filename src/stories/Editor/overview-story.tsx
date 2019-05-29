@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Editor, EditorTools } from '@progress/kendo-react-editor';
-import { props } from './props';
+import props from './props';
 
 const { Bold, Italic, Underline,
   AlignLeft, AlignRight, AlignCenter,
@@ -11,7 +11,7 @@ const { Bold, Italic, Underline,
 
 storiesOf('Editor', module).add('Overview', () =>
   <Editor
-    {...props()}
+   {...props()}
     tools={[
         [ Bold, Italic, Underline ],
         [ Undo, Redo ],

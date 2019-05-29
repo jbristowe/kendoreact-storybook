@@ -1,7 +1,7 @@
 import { action } from '@storybook/addon-actions';
 import { boolean, number } from '@storybook/addon-knobs';
 
-export const props = () => ({
+const props = () => ({
   // appearance knobs
   filterable: boolean('filterable', false, 'Appearance'),
   groupable: boolean('groupable', false, 'Appearance'),
@@ -28,3 +28,5 @@ export const props = () => ({
   // appearance
   style: {width:800}
 });
+
+export default props;

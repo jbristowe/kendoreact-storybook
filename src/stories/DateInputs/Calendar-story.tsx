@@ -39,5 +39,5 @@ const props = () => ({
 });
 
 storiesOf('DateInputs/Calendar', module).add('Overview', () =>
-  <Calendar {...props()} />
+  <Calendar{...props()} />
 );

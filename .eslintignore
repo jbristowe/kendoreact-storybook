@@ -1,0 +1,4 @@
+node_modules/*
+**/vendor/*.js
+src/serviceWorker.js
+src/index.js

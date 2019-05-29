@@ -1,7 +1,7 @@
 import { action } from '@storybook/addon-actions';
 import { boolean, select } from '@storybook/addon-knobs';
 
-export const props = () => ({
+const props = () => ({
   // behavior knobs
   disabled: boolean('disabled', false, 'Behavior'),
   renderAs: select('renderAs', [ 'svg', 'canvas' ], 'svg', 'Behavior'),
@@ -28,5 +28,7 @@ export const props = () => ({
   onDragStart: action('dragStart'),
 
   // appearance
-  style: {width:800}
+  style: {width:800},
 });
+
+export default props;

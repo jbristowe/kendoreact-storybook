@@ -1,21 +1,21 @@
 import { action } from '@storybook/addon-actions';
 import { boolean, select, text } from '@storybook/addon-knobs';
 
-export const props = () => ({
+const props = () => ({
   // appearance knobs
-  primary: boolean('primary', false, 'Appearance'),
-  look: select('look', [ 'default', 'bare', 'flat', 'outline' ], 'default', 'Appearance'),
-  icon: text('icon', '', 'Appearance'),
+  look: select('look', ['default', 'bare', 'flat', 'outline'], 'default', 'Appearance'),
+  // icon: text('icon', '', 'Appearance'),
   iconClass: text('iconClass', '', 'Appearance'),
+  items: ['My Profile', 'Friend Requests', 'Account Settings', 'Support', 'Log Out'],
   imageAlt: text('imageAlt', '', 'Appearance'),
   imageUrl: text('imageUrl', '', 'Appearance'),
+  primary: boolean('primary', false, 'Appearance'),
   selected: boolean('selected', false, 'Appearance'),
-  title: text('title', '', 'Appearance'),
+  text: text('text', 'User Settings', 'Appearance'),
 
   // behavior knobs
   disabled: boolean('disabled', false, 'Behavior'),
   togglable: boolean('togglable', false, 'Behavior'),
-  value: text('value', '', 'Behavior'),
 
   // event actions
   onAbort: action('abort'),
@@ -23,5 +23,7 @@ export const props = () => ({
   onAnimationEnd: action('animationEnd'),
   onAnimationEndCapture: action('animationEndCapture'),
   onAnimationIteration: action('animationIteration'),
-  onClick: action('click')
+  onClick: action('click'),
 });
+
+export default props;

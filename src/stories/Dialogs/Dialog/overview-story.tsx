@@ -33,7 +33,7 @@ storiesOf('Dialogs/Dialog', module).add('Overview', () => {
   });
 
   return (
-    <Dialog {...props()}>
+    <Dialog{...props()}>
       <p>{content}</p>
       <DialogActionsBar>
         {outputOption('Option 1', 'No', boolean('isOption1Primary', false, 'Option 1'))}

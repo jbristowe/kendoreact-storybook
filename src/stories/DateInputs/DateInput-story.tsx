@@ -26,5 +26,5 @@ const props = () => ({
 });
 
 storiesOf('DateInputs/DateInput', module).add('Overview', () =>
-  <DateInput {...props()} />
+  <DateInput{...props()} />
 );

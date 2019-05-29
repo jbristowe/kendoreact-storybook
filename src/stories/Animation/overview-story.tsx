@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Expand, Fade, Push, Slide, Zoom, Reveal } from '@progress/kendo-react-animation'
+import props from './props';
 
 class App extends React.Component {
   constructor(props) {
@@ -28,28 +29,28 @@ class App extends React.Component {
 
       switch (this.state.animationType) {
           case 'slide':
-              animation = (<Slide >{children}</Slide>);
+              animation = (<Slide>{children}</Slide>);
               break;
           case 'push':
-              animation = (<Push >{children}</Push>);
+              animation = (<Push>{children}</Push>);
               break;
           case 'expand':
-              animation = (<Expand >{children}</Expand>);
+              animation = (<Expand>{children}</Expand>);
               break;
           case 'fade':
-              animation = (<Fade >{children}</Fade>);
+              animation = (<Fade>{children}</Fade>);
               break;
           case 'zoom':
-              animation = (<Zoom >{children}</Zoom>);
+              animation = (<Zoom>{children}</Zoom>);
               break;
           case 'reveal':
-              animation = (<Reveal >{children}</Reveal>);
+              animation = (<Reveal>{children}</Reveal>);
               break;
-          default: animation = (<Slide >{children}</Slide>); break;
+          default: animation = (<Slide>{children}</Slide>); break;
       }
 
       return (
-          <div className="example-wrapper row">
+          <div className="example-wrapper row" {...props()}>
               <div className="col-xs-12 col-sm-6 example-col">
                   {animation}
               </div>
