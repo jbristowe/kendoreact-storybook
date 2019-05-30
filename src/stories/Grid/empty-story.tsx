@@ -4,5 +4,5 @@ import { Grid } from '@progress/kendo-react-grid';
 import props from './props';
 
 storiesOf('Grid', module).add('Empty', () =>
-  <Grid{...props()} />
+  <Grid {...props()} />
 );

@@ -26,7 +26,7 @@ const props = () => ({
   onSortChange: action('sortChanged'),
 
   // appearance
-  style: {width:800}
+  style: {width: number('width', 800, {}, 'Appearance')}
 });
 
 export default props;
