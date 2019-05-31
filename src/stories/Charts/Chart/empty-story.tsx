@@ -5,5 +5,5 @@ import 'hammerjs';
 import props from './props';
 
 storiesOf('Charts/Chart', module).add('Empty', () => (
-  <Chart{...props()} />
+  <Chart {...props()} />
 ));

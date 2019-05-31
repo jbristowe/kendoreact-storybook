@@ -22,7 +22,7 @@ const series = [
   }];
 
 storiesOf('Charts/Chart', module).add('Overview', () => (
-  <Chart{...props()}>
+  <Chart {...props()}>
     <ChartTitle text={text('Title', 'Title')} align={select('Align', ['center', 'left', 'right'], 'center')} />
     <ChartCategoryAxis>
       <ChartCategoryAxisItem categories={array('Categories', categories)} />

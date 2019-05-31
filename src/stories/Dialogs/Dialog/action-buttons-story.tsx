@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Dialog, DialogActionsBar } from '@progress/kendo-react-dialogs';
 
-storiesOf('DateInputs/MultiViewCalendar', module).add('Overview', () =>
+storiesOf('Dialogs/Dialog', module).add('Action Buttons', () =>
   <div>
     <button className="k-button" onClick={this.toggleDialog}>Open Dialog</button>
     {this.state.visible && <Dialog title={"Delete Data"} onClose={this.toggleDialog}>

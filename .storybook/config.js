@@ -6,11 +6,11 @@ import centered from '@storybook/addon-centered';
 import { withKnobs } from '@storybook/addon-knobs';
 import Container from './container';
 
+addDecorator(story => <Container story={story} />);
+addDecorator(centered);
 addDecorator(withA11y);
 addDecorator(withInfo);
 addDecorator(withKnobs);
-addDecorator(centered);
-addDecorator(story => <Container story={story} />);
 
 addParameters({
   backgrounds: [

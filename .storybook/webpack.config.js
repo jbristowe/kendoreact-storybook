@@ -6,6 +6,14 @@ module.exports = async ({ config }) => {
     loaders: ['sass-loader'],
     include: path.resolve(__dirname, '../'),
   });
+  // config.module.rules.push({
+  //   test: /\.(ts|tsx)?$/,
+  //   loaders: [{
+  //     loader: require.resolve('@storybook/addon-storysource/loader'),
+  //     options: { parser: 'typescript' }
+  //   }],
+  //   enforce: 'pre',
+  // });
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
     loader: require.resolve('babel-loader'),

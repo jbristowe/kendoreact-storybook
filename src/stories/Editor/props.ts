@@ -1,16 +1,7 @@
-import { text } from '@storybook/addon-knobs';
-import content from './content';
+import { boolean, number, select, text } from '@storybook/addon-knobs';
 
 export const props = () => ({
-  // appearance knobs
-  defaultContent: text('defaultContent', content, 'Appearance'),
-
-  // behavior knobs
-
-  // event actions
-
-  // appearance
-  style: {width:800}
+  style: {width:800},
 });
 
 export default props;
