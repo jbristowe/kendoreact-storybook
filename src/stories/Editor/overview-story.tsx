@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Editor, EditorTools } from '@progress/kendo-react-editor';
-import { boolean, number, select, text } from '@storybook/addon-knobs';
+import { text } from '@storybook/addon-knobs';
 import content from './content';
 import props from './props';
 
