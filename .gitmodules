@@ -1,0 +1,3 @@
+[submodule "src/config/kendo-react-messages"]
+	path = src/config/kendo-react-messages
+	url = https://github.com/telerik/kendo-react-messages.git

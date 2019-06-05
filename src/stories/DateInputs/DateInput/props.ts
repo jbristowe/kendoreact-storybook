@@ -8,7 +8,7 @@ const defaultMin = new Date('Jan 1, 1900');
 const dateInputProps = () => ({
   className: text('className', undefined),
   defaultValue: new Date(date('defaultValue', defaultValue)),
-  dir: text('dir', undefined),
+  dir: select('dir', ['rtl', 'ltr', 'auto'], 'auto'),
   disabled: boolean('disabled', undefined),
   format: text('format', undefined),
   formatPlaceholder: select('formatPlaceholder', ['wide', 'narrow', 'short', 'formatPattern'], undefined),
