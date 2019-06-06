@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { IntlProvider, load, LocalizationProvider, loadMessages } from '@progress/kendo-react-intl';
+import { LocaleContextProvider } from '../src/contexts/LocaleContext';
 import './container.scss';
 
 import likelySubtags from 'cldr-core/supplemental/likelySubtags.json';
@@ -74,9 +75,9 @@ export default class Container extends Component {
 
     return (
       <React.StrictMode>
-        <LocalizationProvider language="de">
+        <LocaleContextProvider>
           {story()}
-        </LocalizationProvider>
+        </LocaleContextProvider>
       </React.StrictMode>
     );
   }
