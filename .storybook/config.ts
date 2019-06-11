@@ -8,7 +8,7 @@ import centered from '@storybook/addon-centered/react';
 import { Container } from './container';
 
 addDecorator(Container);
-// addDecorator(centered);
+addDecorator(centered);
 addDecorator(withA11y);
 addDecorator(withI18n);
 addDecorator(withInfo);
