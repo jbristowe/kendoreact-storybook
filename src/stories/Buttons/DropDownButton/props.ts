@@ -2,24 +2,24 @@ import { action } from '@storybook/addon-actions';
 import { boolean, select, text } from '@storybook/addon-knobs';
 
 const props = () => ({
-  buttonClass: text('buttonClass', undefined),
-  className: text('className', undefined),
+  buttonClass: text('buttonClass', null),
+  className: text('className', null),
   dir: select('dir', ['rtl', 'ltr', 'auto'], 'auto'),
-  disabled: boolean('disabled', undefined),
+  disabled: boolean('disabled', false),
   look: select('look', ['default', 'bare', 'flat', 'outline'], 'default'),
-  icon: text('icon', undefined),
-  iconClass: text('iconClass', undefined),
-  imageAlt: text('imageAlt', undefined),
-  imageUrl: text('imageUrl', undefined),
+  icon: text('icon', null),
+  iconClass: text('iconClass', null),
+  imageAlt: text('imageAlt', null),
+  imageUrl: text('imageUrl', null),
   onBlur: action('blurred'),
   onClose: action('closed'),
   onFocus: action('focused'),
   onItemClick: action('itemClicked'),
   onOpen: action('opened'),
-  primary: boolean('primary', undefined),
-  selected: boolean('selected', undefined),
-  text: text('text', undefined),
-  textField: text('textField', undefined)
+  primary: boolean('primary', false),
+  selected: boolean('selected', false),
+  text: text('text', null),
+  textField: text('textField', null)
 });
 
 export default props;

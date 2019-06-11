@@ -3,7 +3,7 @@ import { boolean } from '@storybook/addon-knobs';
 
 const props = () => ({
   // appearance knobs
-  expandIcons: boolean('expandIcons', true, 'Appearance'),
+  expandIcons: boolean('expandIcons', true),
 
   // behavior knobs
   disabled: boolean('disabled', false, 'Behavior'),

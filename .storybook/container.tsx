@@ -67,16 +67,20 @@ import esMessages from '../src/config/kendo-react-messages/messages/es-ES/es-ES.
 loadMessages(esMessages, 'es-ES');
 
 import zhMessages from '../src/config/kendo-react-messages/messages/zh-CN/zh-CN.json';
+import { Renderable } from '@storybook/react';
 loadMessages(zhMessages, 'zh-CN');
 
-export default class Container extends Component {
-  render() {
-    const { story } = this.props;
+interface Props {
+  story: Renderable
+}
 
+export default class Container extends Component {
+  public story: Renderable;
+  render() {
     return (
       <React.StrictMode>
         <LocaleContextProvider>
-          {story()}
+          {this.story}
         </LocaleContextProvider>
       </React.StrictMode>
     );

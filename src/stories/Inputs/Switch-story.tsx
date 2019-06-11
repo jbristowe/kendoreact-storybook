@@ -7,9 +7,9 @@ import props from './props';
 storiesOf('Inputs/Switch', module).add('Overview', () =>
   <Switch
     {...props()}
-    checked={boolean('checked')}
-    offLabel={text('offLabel')}
-    onLabel={text('onLabel')}
-    tabIndex={number('tabIndex')}
+    checked={boolean('checked', false)}
+    offLabel={text('offLabel', null)}
+    onLabel={text('onLabel', null)}
+    tabIndex={number('tabIndex', 0)}
   />
 );

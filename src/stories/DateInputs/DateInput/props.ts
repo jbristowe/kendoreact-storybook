@@ -6,27 +6,27 @@ const defaultMax = new Date('Dec 31 2099');
 const defaultMin = new Date('Jan 1, 1900');
 
 const dateInputProps = () => ({
-  className: text('className', undefined),
+  className: text('className', null),
   defaultValue: new Date(date('defaultValue', defaultValue)),
   dir: select('dir', ['rtl', 'ltr', 'auto'], 'auto'),
-  disabled: boolean('disabled', undefined),
-  format: text('format', undefined),
-  formatPlaceholder: select('formatPlaceholder', ['wide', 'narrow', 'short', 'formatPattern'], undefined),
-  id: text('id', undefined),
-  label: text('label', undefined),
+  disabled: boolean('disabled', false),
+  format: text('format', null),
+  formatPlaceholder: select('formatPlaceholder', ['wide', 'narrow', 'short', 'formatPattern'], 'wide'),
+  id: text('id', null),
+  label: text('label', null),
   max: new Date(date('max', defaultMax)),
   min: new Date(date('min', defaultMin)),
-  name: text('name', undefined),
+  name: text('name', null),
   onChange: action('change'),
-  required: boolean('required', undefined),
-  spinners: boolean('spinners', undefined),
+  required: boolean('required', false),
+  spinners: boolean('spinners', false),
   tabIndex: number('tabIndex', 0),
-  title: text('title', undefined),
-  valid: boolean('valid', undefined),
-  validationMessage: text('validationMessage', undefined),
-  validityStyles: boolean('validityStyles', undefined),
+  title: text('title', null),
+  valid: boolean('valid', false),
+  validationMessage: text('validationMessage', null),
+  validityStyles: boolean('validityStyles', false),
   value: new Date(date('value', defaultValue)),
-  width: text('width', undefined)
+  width: text('width', null)
 });
 
 export default dateInputProps;

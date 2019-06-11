@@ -1,6 +1,29 @@
 {
   "compilerOptions": {
+    "outDir": "build/lib",
+    "module": "commonjs",
+    "target": "es6",
+    "lib": ["es6", "es7", "es2017", "dom"],
+    "sourceMap": true,
+    "allowJs": false,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "baseUrl": "src",
     "resolveJsonModule": true,
-    "esModuleInterop": true  
-  }
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "suppressImplicitAnyIndexErrors": false,
+    "noUnusedLocals": true,
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build", "scripts"]
 }
