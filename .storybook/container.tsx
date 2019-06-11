@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import { IntlProvider, load, LocalizationProvider, loadMessages } from '@progress/kendo-react-intl';
+import React from 'react';
+import { RenderFunction } from '@storybook/react';
+import { load, loadMessages } from '@progress/kendo-react-intl';
 import { LocaleContextProvider } from '../src/contexts/LocaleContext';
 import './container.scss';
 
@@ -67,22 +68,12 @@ import esMessages from '../src/config/kendo-react-messages/messages/es-ES/es-ES.
 loadMessages(esMessages, 'es-ES');
 
 import zhMessages from '../src/config/kendo-react-messages/messages/zh-CN/zh-CN.json';
-import { Renderable } from '@storybook/react';
 loadMessages(zhMessages, 'zh-CN');
 
-interface Props {
-  story: Renderable
-}
-
-export default class Container extends Component {
-  public story: Renderable;
-  render() {
-    return (
-      <React.StrictMode>
-        <LocaleContextProvider>
-          {this.story}
-        </LocaleContextProvider>
-      </React.StrictMode>
-    );
-  }
-}
+export const Container = (story: RenderFunction) => (
+  <React.StrictMode>
+    <LocaleContextProvider>
+      {story()}
+    </LocaleContextProvider>
+  </React.StrictMode>
+);

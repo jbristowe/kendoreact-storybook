@@ -1,14 +1,14 @@
 import { addDecorator, addParameters, configure } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 import { withA11y } from '@storybook/addon-a11y';
-import centered from '@storybook/addon-centered/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withI18n } from "storybook-addon-i18n";
 import { IntlProvider } from '@progress/kendo-react-intl';
-import Container from './container';
+import centered from '@storybook/addon-centered/react';
+import { Container } from './container';
 
-//addDecorator(story => <Container story={story} />);
-//addDecorator(centered);
+addDecorator(Container);
+// addDecorator(centered);
 addDecorator(withA11y);
 addDecorator(withI18n);
 addDecorator(withInfo);
