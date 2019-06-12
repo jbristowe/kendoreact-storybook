@@ -4,11 +4,11 @@ import { withA11y } from '@storybook/addon-a11y';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withI18n } from "storybook-addon-i18n";
 import { IntlProvider } from '@progress/kendo-react-intl';
-import centered from '@storybook/addon-centered/react';
+//import centered from '@storybook/addon-centered/react';
 import { Container } from './container';
 
 addDecorator(Container);
-addDecorator(centered);
+//addDecorator(centered);
 addDecorator(withA11y);
 addDecorator(withI18n);
 addDecorator(withInfo);
