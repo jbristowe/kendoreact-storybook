@@ -1,5 +1,5 @@
 import { action } from '@storybook/addon-actions';
-import { boolean, select, text } from '@storybook/addon-knobs';
+import { array, boolean, select, text } from '@storybook/addon-knobs';
 import { icons } from '../../../utils/icons';
 
 const props = () => ({
@@ -12,6 +12,7 @@ const props = () => ({
   iconClass: text('iconClass', null),
   imageAlt: text('imageAlt', null),
   imageUrl: text('imageUrl', null),
+  items: array('items', ['A', 'B', 'C', 'D', 'E']),
   onBlur: action('blurred'),
   onClose: action('closed'),
   onFocus: action('focused'),
