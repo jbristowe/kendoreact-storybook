@@ -18,7 +18,7 @@ const props = () => ({
   onFocus: action('focus'),
   onItemClick: action('itemClick'),
   onOpen: action('open'),
-  tabIndex: number('tabIndex', null, null, 'SplitButton'),
+  tabIndex: number('tabIndex', 0, {}, 'SplitButton'),
   text: text('text', 'This is the text...', 'SplitButton'),
   textField: text('textField', null, 'SplitButton')
 });
