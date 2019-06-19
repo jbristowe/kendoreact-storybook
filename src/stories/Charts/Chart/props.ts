@@ -1,13 +1,12 @@
 import { action } from '@storybook/addon-actions';
-import { boolean, select } from '@storybook/addon-knobs';
+import { select, boolean } from '@storybook/addon-knobs';
 
 const props = () => ({
-  // behavior knobs
-  disabled: boolean('disabled', false, 'Behavior'),
-  renderAs: select('renderAs', [ 'svg', 'canvas' ], 'svg', 'Behavior'),
-
-  // event actions
+  dir: select('dir', ['rtl', 'ltr', 'auto'], 'auto'),
   onAxisLabelClick: action('axisLabelClick'),
+  onDrag: action('drag'),
+  onDragEnd: action('dragEnd'),
+  onDragStart: action('dragStart'),
   onLegendItemClick: action('legendItemClick'),
   onLegendItemHover: action('legendItemHover'),
   onNoteClick: action('noteClick'),
@@ -23,12 +22,11 @@ const props = () => ({
   onZoom: action('zoom'),
   onZoomEnd: action('zoomEnd'),
   onZoomStart: action('zoomStart'),
-  onDrag: action('drag'),
-  onDragEnd: action('dragEnd'),
-  onDragStart: action('dragStart'),
-
-  // appearance
+  pannable: boolean('pannable', false),
+  renderAs: select('renderAs', [ 'svg', 'canvas' ], 'svg'),
   style: {width:800},
+  transitions: boolean('transitions', true),
+  zoomable: boolean('zoomable', false)
 });
 
 export default props;
