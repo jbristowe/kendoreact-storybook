@@ -1,9 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { array, select, text } from '@storybook/addon-knobs';
-import { Chart, ChartSeries, ChartSeriesItem, ChartCategoryAxis, ChartCategoryAxisItem, ChartTitle } from '@progress/kendo-react-charts';
+import { array } from '@storybook/addon-knobs';
+import { Chart, ChartArea, ChartSeries, ChartSeriesItem, ChartCategoryAxis, ChartCategoryAxisItem, ChartTitle } from '@progress/kendo-react-charts';
 import 'hammerjs';
-import props from './props';
+import chartProps, { chartAreaProps, chartTitleProps } from './props';
 
 const categories = [ 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011 ];
 const series = [
@@ -22,8 +22,9 @@ const series = [
   }];
 
 storiesOf('Charts/Chart', module).add('Overview', () => (
-  <Chart {...props()}>
-    <ChartTitle text={text('Title', 'Title')} align={select('Align', ['center', 'left', 'right'], 'center')} />
+  <Chart {...chartProps()}>
+    <ChartTitle {...chartTitleProps()} />
+    <ChartArea {...chartAreaProps()} />
     <ChartCategoryAxis>
       <ChartCategoryAxisItem categories={array('Categories', categories)} />
     </ChartCategoryAxis>

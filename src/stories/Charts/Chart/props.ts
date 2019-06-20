@@ -1,8 +1,8 @@
 import { action } from '@storybook/addon-actions';
-import { select, boolean } from '@storybook/addon-knobs';
+import { boolean, color, number, select, text } from '@storybook/addon-knobs';
 
-const props = () => ({
-  dir: select('dir', ['rtl', 'ltr', 'auto'], 'auto'),
+const chartProps = () => ({
+  dir: select('dir', ['rtl', 'ltr', 'auto'], 'auto', 'Chart'),
   onAxisLabelClick: action('axisLabelClick'),
   onDrag: action('drag'),
   onDragEnd: action('dragEnd'),
@@ -22,11 +22,31 @@ const props = () => ({
   onZoom: action('zoom'),
   onZoomEnd: action('zoomEnd'),
   onZoomStart: action('zoomStart'),
-  pannable: boolean('pannable', false),
-  renderAs: select('renderAs', [ 'svg', 'canvas' ], 'svg'),
+  pannable: boolean('pannable', false, 'Chart'),
+  renderAs: select('renderAs', [ 'svg', 'canvas' ], 'svg', 'Chart'),
   style: {width:800},
-  transitions: boolean('transitions', true),
-  zoomable: boolean('zoomable', false)
+  transitions: boolean('transitions', true, 'Chart'),
+  zoomable: boolean('zoomable', false, 'Chart')
 });
 
-export default props;
+export const chartTitleProps = () => ({
+  align: select('align (Title)', ['center', 'left', 'right'], 'center', 'Title'),
+  background: color('background (Title)', '#fff', 'Title'),
+  color: color('color (Title)', '#000', 'Title'),
+  font: text('font (Title)', null, 'Title'),
+  margin: number('margin (Title)', 0, {}, 'Title'),
+  padding: number('padding (Title)', 0, {}, 'Title'),
+  position: select('position (Title)', ['top', 'bottom'], 'top', 'Title'),
+  text: text('text (Title)', 'Chart Title', 'Title'),
+  visible: boolean('visible (Title)', true, 'Title')
+});
+
+export const chartAreaProps = () => ({
+  background: color('background (Area)', '#fff', 'Area'),
+  height: number('height (Area)', 0, {}, 'Area'),
+  margin: number('margin (Area)', 0, {}, 'Area'),
+  opacity: number('opacity (Area)', 0, {}, 'Area'),
+  width: number('width (Area)', 0, {}, 'Area')
+});
+
+export default chartProps;
