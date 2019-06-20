@@ -43,10 +43,10 @@ export const chartTitleProps = () => ({
 
 export const chartAreaProps = () => ({
   background: color('background (Area)', '#fff', 'Area'),
-  height: number('height (Area)', 0, {}, 'Area'),
+  height: number('height (Area)', 400, {}, 'Area'),
   margin: number('margin (Area)', 0, {}, 'Area'),
-  opacity: number('opacity (Area)', 0, {}, 'Area'),
-  width: number('width (Area)', 0, {}, 'Area')
+  opacity: number('opacity (Area)', 1, { range: true, min: 0, max: 1, step: 0.001 }, 'Area'),
+  width: number('width (Area)', 800, {}, 'Area')
 });
 
 export default chartProps;
