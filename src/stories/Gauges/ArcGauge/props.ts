@@ -1,4 +1,4 @@
-import { boolean, color, select, text, number } from '@storybook/addon-knobs';
+import { boolean, color, select, number } from '@storybook/addon-knobs';
 
 const props = () => ({
   color: color('color', undefined),
