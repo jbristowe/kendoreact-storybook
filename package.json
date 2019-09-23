@@ -50,6 +50,7 @@
   ],
   "devDependencies": {
     "@babel/core": "^7.4.5",
+    "@progress/kendo-react-gauges": "^3.4.1",
     "@progress/kendo-react-intl": "^3.2.2",
     "@storybook/addon-a11y": "^5.1.11",
     "@storybook/addon-actions": "^5.1.11",

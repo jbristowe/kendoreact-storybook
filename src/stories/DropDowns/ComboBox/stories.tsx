@@ -3,7 +3,7 @@ import { ComboBox } from '@progress/kendo-react-dropdowns';
 import props from './props';
 
 export default {
-  title: 'DropDowns/ComboBox'
+  title: 'Dropdowns/ComboBox'
 };
 
 export const Empty = () =>

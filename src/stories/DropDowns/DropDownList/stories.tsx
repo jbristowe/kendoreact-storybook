@@ -3,7 +3,7 @@ import { DropDownList } from '@progress/kendo-react-dropdowns';
 import props from './props';
 
 export default {
-  title: 'DropDowns/DropDownList'
+  title: 'Dropdowns/DropDownList'
 };
 
 export const Empty = () =>

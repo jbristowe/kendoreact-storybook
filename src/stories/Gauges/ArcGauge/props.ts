@@ -1,0 +1,12 @@
+import { boolean, color, select, text, number } from '@storybook/addon-knobs';
+
+const props = () => ({
+  color: color('color', undefined),
+  disabled: boolean('disabled', false),
+  opacity: number('opacity', 1, { range: true, min: 0, max: 1, step: 0.001 }),
+  renderAs: select('renderAs', [ 'svg', 'canvas' ], 'svg'),
+  transitions: boolean('transitions', true),
+  value: number('value', 0)
+});
+
+export default props;

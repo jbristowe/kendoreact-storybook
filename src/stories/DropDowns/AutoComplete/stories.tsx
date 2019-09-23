@@ -3,7 +3,7 @@ import { AutoComplete } from '@progress/kendo-react-dropdowns';
 import props from './props';
 
 export default {
-  title: 'DropDowns/AutoComplete'
+  title: 'Dropdowns/AutoComplete'
 };
 
 export const Empty = () =>
