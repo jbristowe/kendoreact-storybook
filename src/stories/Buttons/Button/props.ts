@@ -4,7 +4,7 @@ import { icons } from '../../../utils/icons';
 
 const props = () => ({
   disabled: boolean('disabled', false),
-  look: select('look', ['default', 'bare', 'flat', 'outline'], 'default'),
+  look: select('look', ['default', 'flat', 'bare', 'outline'], 'default'),
   icon: select('icon', icons, null),
   iconClass: text('iconClass', null),
   imageAlt: text('imageAlt', null),

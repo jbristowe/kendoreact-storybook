@@ -1,19 +1,19 @@
 import { action } from '@storybook/addon-actions';
-import { boolean } from '@storybook/addon-knobs';
+import { boolean, text } from '@storybook/addon-knobs';
 
 const props = () => ({
-  // appearance knobs
+  animate: boolean('animate', true),
+  ariaLabel: text('aria-label', null),
+  ariaLabelledBy: text('aria-labelledby', null),
+  ariaMultiselectable: text('aria-multiselectable', null),
+  checkField: text('checkField', null),
+  checkIndeterminateField: text('checkIndeterminateField', null),
+  checkboxes: boolean('animate', false),
   expandIcons: boolean('expandIcons', true),
-
-  // behavior knobs
   disabled: boolean('disabled', false, 'Behavior'),
-
-  // event actions
   onExpandChange: action('onExpandChange'),
   onItemClick: action('onItemClick'),
-
-  // appearance
-  style: { width: 800 },
+  style: { width: 800 }
 });
 
 export default props;

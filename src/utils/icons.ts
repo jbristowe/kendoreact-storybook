@@ -1,4 +1,4 @@
-export const icons: Array<String> = [
+export const icons: Array<string> = [
   '',
   'undo',
   'redo',
