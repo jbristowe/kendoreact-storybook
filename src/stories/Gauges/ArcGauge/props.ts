@@ -1,5 +1,9 @@
 import { boolean, color, select, number } from '@storybook/addon-knobs';
 
+export const emptyProps = () => ({
+  value: number('value', 0)
+})
+
 const props = () => ({
   color: color('color', undefined),
   disabled: boolean('disabled', false),
