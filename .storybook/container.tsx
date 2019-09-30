@@ -70,10 +70,10 @@ loadMessages(esMessages, 'es-ES');
 import zhMessages from '../src/config/kendo-react-messages/messages/zh-CN/zh-CN.json';
 loadMessages(zhMessages, 'zh-CN');
 
-export const Container = (story: RenderFunction) => (
+export const Container = (story: RenderFunction) =>
   <React.StrictMode>
     <LocaleContextProvider>
       {story()}
     </LocaleContextProvider>
   </React.StrictMode>
-);
+;
