@@ -3,15 +3,15 @@ import { array, boolean, select, text } from '@storybook/addon-knobs';
 import { icons } from '../../../utils/icons';
 
 const props = () => ({
-  buttonClass: text('buttonClass', null),
-  className: text('className', null),
+  buttonClass: text('buttonClass', ''),
+  className: text('className', ''),
   dir: select('dir', ['rtl', 'ltr', 'auto'], 'auto'),
   disabled: boolean('disabled', false),
   look: select('look', ['default', 'bare', 'flat', 'outline'], 'default'),
-  icon: select('icon', icons, null),
-  iconClass: text('iconClass', null),
-  imageAlt: text('imageAlt', null),
-  imageUrl: text('imageUrl', null),
+  icon: select('icon', icons, ''),
+  iconClass: text('iconClass', ''),
+  imageAlt: text('imageAlt', ''),
+  imageUrl: text('imageUrl', ''),
   items: array('items', ['A', 'B', 'C', 'D', 'E']),
   onBlur: action('blurred'),
   onClose: action('closed'),
@@ -21,7 +21,7 @@ const props = () => ({
   primary: boolean('primary', false),
   selected: boolean('selected', false),
   text: text('text', 'Text...'),
-  textField: text('textField', null)
+  textField: text('textField', '')
 });
 
 export default props;

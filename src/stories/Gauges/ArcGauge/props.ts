@@ -5,7 +5,7 @@ export const emptyProps = () => ({
 })
 
 const props = () => ({
-  color: color('color', undefined),
+  color: color('color', ''),
   disabled: boolean('disabled', false),
   opacity: number('opacity', 1, { range: true, min: 0, max: 1, step: 0.001 }),
   renderAs: select('renderAs', [ 'svg', 'canvas' ], 'svg'),

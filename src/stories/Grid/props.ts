@@ -2,10 +2,10 @@ import { action } from '@storybook/addon-actions';
 import { boolean, number, select, text } from '@storybook/addon-knobs';
 
 const props = () => ({
-  className: text('className', null),
+  className: text('className', ''),
   columnVirtualization: boolean('columnVirtualization', false),
-  editField: text('editField', null),
-  expandField: text('expandField', null),
+  editField: text('editField', ''),
+  expandField: text('expandField', ''),
   filterable: boolean('filterable', false),
   groupable: boolean('groupable', false),
   onColumnReorder: action('columnReordered'),
@@ -27,7 +27,7 @@ const props = () => ({
   resizable: boolean('resizable', false),
   rowHeight: number('rowHeight', 0),
   scrollable: select('scrollable', ['none', 'scrollable', 'virtual'], 'none'),
-  selectedField: text('selectedField', null),
+  selectedField: text('selectedField', ''),
   skip: number('skip', 0),
   sortable: boolean('sortable', false),
   style: {width: number('width', 800)},

@@ -33,7 +33,7 @@ export const chartTitleProps = () => ({
   align: select('align (Title)', ['center', 'left', 'right'], 'center', 'Title'),
   background: color('background (Title)', '#fff', 'Title'),
   color: color('color (Title)', '#000', 'Title'),
-  font: text('font (Title)', null, 'Title'),
+  font: text('font (Title)', '', 'Title'),
   margin: number('margin (Title)', 0, {}, 'Title'),
   padding: number('padding (Title)', 0, {}, 'Title'),
   position: select('position (Title)', ['top', 'bottom'], 'top', 'Title'),

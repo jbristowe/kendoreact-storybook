@@ -5,10 +5,10 @@ import { icons } from '../../../utils/icons';
 const props = () => ({
   disabled: boolean('disabled', false),
   look: select('look', ['default', 'flat', 'bare', 'outline'], 'default'),
-  icon: select('icon', icons, null),
-  iconClass: text('iconClass', null),
-  imageAlt: text('imageAlt', null),
-  imageUrl: text('imageUrl', null),
+  icon: select('icon', icons, ''),
+  iconClass: text('iconClass', ''),
+  imageAlt: text('imageAlt', ''),
+  imageUrl: text('imageUrl', ''),
   primary: boolean('primary', false),
   onAbort: action('abort'),
   onAbortCapture: action('abortCapture'),
@@ -17,7 +17,7 @@ const props = () => ({
   onAnimationIteration: action('animationIteration'),
   onClick: action('click'),
   selected: boolean('selected', false),
-  title: text('title', null),
+  title: text('title', ''),
   togglable: boolean('togglable', false)
 });
 

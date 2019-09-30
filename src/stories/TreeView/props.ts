@@ -3,11 +3,11 @@ import { boolean, text } from '@storybook/addon-knobs';
 
 const props = () => ({
   animate: boolean('animate', true),
-  ariaLabel: text('aria-label', null),
-  ariaLabelledBy: text('aria-labelledby', null),
-  ariaMultiselectable: text('aria-multiselectable', null),
-  checkField: text('checkField', null),
-  checkIndeterminateField: text('checkIndeterminateField', null),
+  ariaLabel: text('aria-label', ''),
+  ariaLabelledBy: text('aria-labelledby', ''),
+  ariaMultiselectable: text('aria-multiselectable', ''),
+  checkField: text('checkField', ''),
+  checkIndeterminateField: text('checkIndeterminateField', ''),
   checkboxes: boolean('animate', false),
   expandIcons: boolean('expandIcons', true),
   disabled: boolean('disabled', false, 'Behavior'),

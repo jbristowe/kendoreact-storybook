@@ -12,7 +12,7 @@ const props = () => ({
   defaultValue: new Date(date('defaultValue', defaultValue)),
   disabled: boolean('disabled', false),
   focusedDate: new Date(date('focusedDate', defaultValue)),
-  id: text('id', null),
+  id: text('id', ''),
   max: new Date(date('max', defaultMax)),
   min: new Date(date('min', defaultMin)),
   navigation: boolean('navigation', true),

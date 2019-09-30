@@ -11,8 +11,8 @@ export const Overview = () =>
   <Switch
     {...props()}
     checked={boolean('checked', false)}
-    offLabel={text('offLabel', null)}
-    onLabel={text('onLabel', null)}
+    offLabel={text('offLabel', '')}
+    onLabel={text('onLabel', '')}
     tabIndex={number('tabIndex', 0)}
   />
 ;

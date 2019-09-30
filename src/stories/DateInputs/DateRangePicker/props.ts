@@ -7,11 +7,11 @@ const defaultMin = new Date('Jan 1, 1900');
 
 const props = () => ({
   allowReverse: boolean('allowReverse', false),
-  className: text('className', null),
+  className: text('className', ''),
   defaultShow: boolean('defaultShow', false),
   disabled: boolean('disabled', false),
   focusedDate: new Date(date('focusedDate', defaultValue)),
-  id: text('id', null),
+  id: text('id', ''),
   max: new Date(date('max', defaultMax)),
   min: new Date(date('min', defaultMin)),
   onBlur: action('blur'),
